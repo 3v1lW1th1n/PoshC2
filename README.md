@@ -118,6 +118,44 @@ Running `posh-service` will automatically start to display the log, but Ctrl-C w
 `posh-log` can be used to re-view the log at any point.
 `posh-stop-service` can be used to stop the service.
 
+# Docker
+
+PoshC2 supports running in Docker containers for consistency and cross-platform support.
+
+** First install Docker and add the PoshC2 directory and PoshC2 project directory locations to Docker's file sharing locations. **
+
+You can then build the Docker image after installing by issuing this command:
+
+```
+posh-docker-build
+```
+
+Once this has completed, then edit the configuration file as usual with
+
+```
+posh-config
+```
+
+Then run the server in a container with:
+
+```
+posh-docker-server
+```
+
+The Implant-Handler can then be started using:
+
+```
+posh-docker -u <username>
+```
+
+All project content is stored in the project directory on the host.
+
+You can clean the Docker containers and images on the host using the following command:
+
+```
+posh-docker-clean
+```
+
 ## Issues / FAQs
 
 If you are experiencing any issues during the installation or use of PoshC2 please check the known issues below and the open issues tracking page within GitHub. If this page doesn't have what you're looking for please open a new issue and we will try to resolve the issue asap.
