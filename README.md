@@ -163,6 +163,18 @@ You can clean the Docker containers and images on the host using the following c
 posh-docker-clean
 ```
 
+## Updating PoshC2 Installations
+
+You can update your PoshC2 installation using the following command:
+
+```
+posh-update
+```
+
+This command will save the changes you have made to your configuration file, then reset the PoshC2 installation to the latest master branch before re-applying those changes.
+
+If applying the changes fails, a message will be printed in order to allow the user to manually merge in the changes.
+
 ## Issues / FAQs
 
 If you are experiencing any issues during the installation or use of PoshC2 please check the known issues below and the open issues tracking page within GitHub. If this page doesn't have what you're looking for please open a new issue and we will try to resolve the issue asap.
