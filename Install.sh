@@ -41,7 +41,7 @@ if [[ ! -d "$POSH_DIR" ]]; then
     echo ""
     echo "[+] Installing git & cloning PoshC2 into $POSH_DIR"
     apt-get install -y git
-    git clone --branch https://github.com/nettitude/PoshC2 "$POSH_DIR"
+    git clone https://github.com/nettitude/PoshC2 "$POSH_DIR"
 fi
 
 # Install requirements for PoshC2
